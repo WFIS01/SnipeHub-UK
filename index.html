@@ -1,0 +1,99 @@
+<!--Delete this if you don't want to host game files for other people-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SnipeHosting</title>
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3444/3444569.png">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at center, #0f0f0f 0%, #000000 100%);
+      color: #00ffff;
+      font-family: 'Courier New', Courier, monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      text-shadow: 0 0 10px #00ffff;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 2em;
+      color: #88f9ff;
+    }
+
+    .btn-container {
+      display: flex;
+      gap: 1em;
+    }
+
+    button {
+      background-color: #001f1f;
+      color: #00ffff;
+      border: 2px solid #00ffff;
+      padding: 1em 2em;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #003f3f;
+      color: #ffffff;
+    }
+
+    .message {
+      margin-top: 1.5em;
+      font-size: 0.9em;
+      color: #00ff99;
+      height: 1.5em;
+    }
+
+    .url-info {
+      margin-top: 1em;
+      font-size: 0.95em;
+      color: #00ffaa;
+    }
+  </style>
+</head>
+<body>
+  <h1>SnipeHosting</h1>
+  <p>Purchase some CyberLand to host data for free by reaching out via Github or Email.</p>
+
+  <div class="btn-container">
+    <button onclick="copyToClipboard('WFIS01', 'GitHub username copied!')">Copy GitHub</button>
+    <button onclick="copyToClipboard('4004a@mail.com', 'Email address copied!')">Copy Email</button>
+  </div>
+
+  <div class="message" id="message"></div>
+  <div class="url-info" id="urlInfo"></div>
+
+  <script>
+    function copyToClipboard(text, msg) {
+      navigator.clipboard.writeText(text).then(() => {
+        const messageEl = document.getElementById('message');
+        messageEl.textContent = msg;
+        setTimeout(() => {
+          messageEl.textContent = '';
+        }, 2000);
+      });
+    }
+
+    // Display current URL
+    document.getElementById('urlInfo').textContent = 'Viewing on: ' + window.location.href;
+  </script>
+</body>
+</html>
+
