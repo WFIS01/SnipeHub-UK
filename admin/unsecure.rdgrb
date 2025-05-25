@@ -1,0 +1,27 @@
+This is not recommended and will make your site vunerable, link your instance to a proper server with no access. This is temporary and will have loopholes
+
+Login Requirement: 0 - None, 1 - Username & Password & 2 - Pin
+Login Browser Cache: 0 - Dont cache the login in the browser 1 - Do cache the login in the browser
+
+*START_READ*
+
+redirected=false
+redirect_url=null
+
+login_requirement=1
+username=default
+password=0000
+pin=null
+
+block_paths=[/admin/,/temporary/]
+
+login_browser_cache=1
+
+firmware=v0.1.1
+app_name=Raid for SnipeHub
+
+*STOP_READ*
+
+As we have said, Raid is a temporary fix. Use a proper server to store credentials so no users can access the admin and temporary files.
+
+To redirect the read to your server, edit redirected=false to redirected=true and change the redirect_url from null to the url or IP.
