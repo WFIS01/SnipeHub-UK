@@ -14,3 +14,4 @@ Proxy|https://truetest.starnightimport.com/|https://rammerhead-sage.vercel.app/l
 Stack|https://raw.githubusercontent.com/WFIS01/SnipeHub-UK/refs/heads/main/pages/games/stack.html|https://creazilla-store.fra1.digitaloceanspaces.com/icons/3217618/stack-icon-md.png|1|2
 Eaglercraft 1.8.8|https://raw.githubusercontent.com/WFIS01/SnipeHub-UK/refs/heads/main/craft.html|https://i.ibb.co/HDQVsHVb/image.png|1|2
 Slow Roads|https://classroom10x.com/math/slow-roads?gd_sdk_referrer_url=https://classroom60x.com/play/slow-roads|https://th.bing.com/th/id/OIP.ZtVYV9nmjJbuvXP5RVixbwAAAA?cb=iwc2&rs=1&pid=ImgDetMain|1|1
+Eaglercraft 1.5.2|https://d3rtzzzsiu7gdr.cloudfront.net/files/minecraft/game/index.html|https://i.ibb.co/HDQVsHVb/image.png|1|1
